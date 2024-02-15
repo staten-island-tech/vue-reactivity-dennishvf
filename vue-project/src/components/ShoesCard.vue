@@ -2,8 +2,9 @@
     <div>
 <h1>{{ Destination.name }}</h1>
 <img :src="Destination.img">
+<h2>{{ Destination.price }}</h2>
 <h2>{{ clicked }}</h2>
-<button @click="increment">Click me</button>
+<button @click="increment">Add to Cart</button>
     </div>
 </template>
 
@@ -20,5 +21,10 @@ function increment(){
 </script>
 
 <style scoped>
-
+img{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+}
 </style>
