@@ -4,6 +4,7 @@
 v-for="destination in shoes"
 :key="destination.name"
 :Destination="destination"
+@addToCart="AddItem(destination)"
 />
   </div>
 </template>
@@ -40,6 +41,12 @@ const shoes= [{
           price: 800,
           img: "https://i.ytimg.com/vi/JMb6A7x6iao/maxresdefault.jpg",
         },]
+
+        var cart=[]
+        function AddItem(Pair){
+          cart.push(Pair)
+          console.log(cart)
+        }
 </script>
 
 <style scoped>

@@ -4,7 +4,7 @@
 <img :src="Destination.img">
 <h2>{{ Destination.price }}</h2>
 <h2>{{ clicked }}</h2>
-<button @click="increment">Add to Cart</button>
+<button @click="$emit('addToCart')">Add to Cart</button>
     </div>
 </template>
 
