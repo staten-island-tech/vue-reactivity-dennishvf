@@ -7,9 +7,13 @@ v-for="destination in shoes"
 @addToCart="AddItem(destination)"
 />
   </div>
+  <div>
+    
+  </div>
 </template>
 
 <script setup>
+
 import ShoeCard from '@/components/ShoesCard.vue';
 const shoes= [{    
           name: "Crocs",
@@ -19,7 +23,7 @@ const shoes= [{
         {
           name: "Dunks",
           price: "$130",
-          img: "https://sneakerfortress.com/cdn-cgi/image/width=1200,height=675,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2024/01/Untitled-design.jpg",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPzziENried8aYFI40pkxQX1OktR1KBJitw&usqp=CAU",
         },
         {
           name: "Vans",
@@ -42,7 +46,7 @@ const shoes= [{
           img: "https://i.ytimg.com/vi/JMb6A7x6iao/maxresdefault.jpg",
         },]
 
-        var cart=[]
+        let cart=[]
         function AddItem(Pair){
           cart.push(Pair)
           console.log(cart)
