@@ -7,13 +7,14 @@ v-for="destination in shoes"
 @addToCart="AddItem(destination)"
 />
   </div>
+  <ShoppingCart v-if="cart.length > 0"/>
   <div>
     
   </div>
 </template>
 
 <script setup>
-
+import ShoppingCart from "@/components/ShoppingCart.vue";
 import ShoeCard from '@/components/ShoesCard.vue';
 const shoes= [{    
           name: "Crocs",
