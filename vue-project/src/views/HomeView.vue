@@ -7,7 +7,7 @@ v-for="destination in shoes"
 @addToCart="AddItem(destination)"
 />
   </div>
-  <ShoppingCart v-if="cart.length > 0"/>
+  <ShoppingCart v-show="cart.length > 0"/>
   <div>
     
   </div>
@@ -16,6 +16,7 @@ v-for="destination in shoes"
 <script setup>
 import ShoppingCart from "@/components/ShoppingCart.vue";
 import ShoeCard from '@/components/ShoesCard.vue';
+import { ref } from 'vue'
 const shoes= [{    
           name: "Crocs",
           price: "$40",
@@ -38,18 +39,18 @@ const shoes= [{
         },
         {
           name: "Skechers",
-          price: 400,
+          price: "$400",
           img: "https://m.media-amazon.com/images/I/51FlBg5uQ9L._AC_UY300_.jpg",
         },
         {
           name: "Jordans",
-          price: 800,
+          price: "800",
           img: "https://i.ytimg.com/vi/JMb6A7x6iao/maxresdefault.jpg",
         },]
 
-        let cart=[]
+        let cart= ref([])
         function AddItem(Pair){
-          cart.push(Pair)
+          cart.value.push(Pair)
           console.log(cart)
         }
 </script>
