@@ -1,4 +1,5 @@
 <template>
+  <h1>The Cars Shoe Store</h1>
   <div>
 <ShoeCard
 v-for="item in shoes"
