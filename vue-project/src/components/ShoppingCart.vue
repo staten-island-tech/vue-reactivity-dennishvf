@@ -4,14 +4,13 @@
 <div v-for="item in props.cart" :key="item.name">
     <h3>{{ item.name }}</h3>
     <h3>{{ item.price }}</h3>
-
     </div>
     </div>
 </template>
 
 <script setup>
 
-
+//export default {};
 const props = defineProps({cart:Array})
 </script >
 
