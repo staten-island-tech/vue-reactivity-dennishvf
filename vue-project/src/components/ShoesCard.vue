@@ -1,8 +1,8 @@
 <template>
-    <div>
-<h1>{{ Destination.name }}</h1>
-<img :src="Destination.img">
-<h2>{{ Destination.price }}</h2>
+    <div class="item">
+<h1>{{ Item.name }}</h1>
+<img :src="Item.img">
+<h2>{{ Item.price }}</h2>
 
 <button @click="$emit('addToCart')">Add to Cart</button>
     </div>
@@ -11,13 +11,14 @@
 <script setup>
 import {ref} from "vue";
 const props= defineProps({
-    Destination: Object,
+    Item: Object,
 });
+const emit = defineEmits([
+    "addToCart"
+])
 //clicker stuff
 const clicked=ref(0);
-function increment(){
-    clicked.value++
-}
+
 </script>
 
 <style scoped>

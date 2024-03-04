@@ -1,14 +1,21 @@
 <template>
     <div>
-<h2>Shopping Cart</h2>
-<div v-for="shoes in prop.cart" :key="flower.name"
+<h1 class="title">Shopping Cart</h1>
+<div v-for="item in props.cart" :key="item.name">
+    <h3>{{ item.name }}</h3>
+    <h3>{{ item.price }}</h3>
+    </div>
     </div>
 </template>
 
-<script >
-export default {};
-</script>
+<script setup>
+
+//export default {};
+const props = defineProps({cart:Array})
+</script >
 
 <style scoped>
-
+title{
+    font-size: x-large;
+}
 </style>

@@ -1,16 +1,16 @@
 <template>
   <div>
 <ShoeCard
-v-for="destination in shoes"
-:key="destination.name"
-:Destination="destination"
-@addToCart="AddItem(destination)"
+v-for="item in shoes"
+:key="item.name"
+:Item="item"
+@addToCart="AddItem(item)"
+
 />
-  </div>
-  <ShoppingCart v-show="cart.length > 0"/>
-  <div>
-    
-  </div>
+  
+    <ShoppingCart 
+    :cart="cart"/>  
+    </div>
 </template>
 
 <script setup>
@@ -44,14 +44,14 @@ const shoes= [{
         },
         {
           name: "Jordans",
-          price: "800",
+          price: "$800",
           img: "https://i.ytimg.com/vi/JMb6A7x6iao/maxresdefault.jpg",
         },]
 
         let cart= ref([])
         function AddItem(Pair){
           cart.value.push(Pair)
-          console.log(cart)
+          console.log(cart.value)
         }
 </script>
 
