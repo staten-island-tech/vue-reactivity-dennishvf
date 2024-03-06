@@ -2,7 +2,7 @@
     <div class="item">
 <h1>{{ Item.name }}</h1>
 <img :src="Item.img">
-<h2>{{ Item.price }}</h2>
+<h2>${{ Item.price }}</h2>
 
 <button @click="$emit('addToCart')">Add to Cart</button>
     </div>

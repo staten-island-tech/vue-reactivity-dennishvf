@@ -25,27 +25,27 @@ const shoes= [{
         },
         {
           name: "Dunks",
-          price: "$130",
+          price: 130,
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPzziENried8aYFI40pkxQX1OktR1KBJitw&usqp=CAU",
         },
         {
           name: "Vans",
-          price: "$100",
+          price: 100,
           img: "https://i.etsystatic.com/11664848/r/il/6a3831/893832495/il_fullxfull.893832495_laas.jpg",
         },
         {
           name: "Air Forces",
-          price: "$110",
+          price: 110,
           img: "https://bluebeecustoms.net/cdn/shop/products/229540238_4231440183618352_8556875875043492714_n_1024x1024@2x.jpg?v=1634674218",
         },
         {
           name: "Skechers",
-          price: "$400",
+          price: 400,
           img: "https://m.media-amazon.com/images/I/51FlBg5uQ9L._AC_UY300_.jpg",
         },
         {
           name: "Jordans",
-          price: "$800",
+          price: 800,
           img: "https://i.ytimg.com/vi/JMb6A7x6iao/maxresdefault.jpg",
         },]
 
