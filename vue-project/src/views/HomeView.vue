@@ -20,7 +20,7 @@ import ShoeCard from '@/components/ShoesCard.vue';
 import { ref } from 'vue'
 const shoes= [{    
           name: "Crocs",
-          price: "$40",
+          price: 40,
           img: "https://footwearnews.com/wp-content/uploads/2023/10/Disney-Pixar-Crocs-Classic-Clog-Mater-Release-Date.webp",
         },
         {
